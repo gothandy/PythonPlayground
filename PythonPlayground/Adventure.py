@@ -1,17 +1,17 @@
 story = {
     'wellBottom': {
-        'look': {'print': 'You can see a bucket above' },
-        'back': {'print': 'You go back through the door',
-                 'answers': 'lightOn'}
+        'look': {'text': 'You can see a bucket above' },
+        'back': {'text': 'You go back through the door',
+                 'next': 'lightOn'}
         },
     'lightOn': {
-        'door': {'print': 'You open the door and are in the bottom of a well',
-                    'answers': 'wellBottom'}
+        'open': {'text': 'You open the door and are in the bottom of a well',
+                 'next': 'wellBottom'}
         },
     'start': {
-        'light': {'print': 'You can see a door',
-                  'answers': 'lightOn' }, 
-        'eat': {'print': 'You have nothing to eat'}
+        'light': {'text': 'You can see a door',
+                  'next': 'lightOn' }, 
+        'eat': {'text': 'You have nothing to eat'}
         }
     }
 
@@ -31,7 +31,7 @@ while True:
         print('You can\'t', answer)
 
     else:
-        print(answers[answer]['print']) 
+        print(answers[answer]['text']) 
 
-        if 'answers' in answers[answer]:
-            answers = story[answers[answer]['answers']]
+        if 'next' in answers[answer]:
+            answers = story[answers[answer]['next']]
