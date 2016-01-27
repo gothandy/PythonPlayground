@@ -1,0 +1,22 @@
+﻿{
+  "wellBottom": {
+    "look": { "text": "You can see a bucket above" },
+    "back": {
+      "next": "lightOn",
+      "text": "You go back through the door"
+    }
+  },
+  "lightOn": {
+    "open": {
+      "text": "You open the door and are in the bottom of a well",
+      "next": "wellBottom"
+    }
+  },
+  "start": {
+    "eat": { "text": "You have nothing to eat" },
+    "light": {
+      "text": "You can see a door",
+      "next": "lightOn"
+    }
+  }
+}

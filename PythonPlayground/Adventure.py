@@ -1,21 +1,10 @@
-story = {
-    'wellBottom': {
-        'look': {'text': 'You can see a bucket above' },
-        'back': {'text': 'You go back through the door',
-                 'next': 'lightOn'}
-        },
-    'lightOn': {
-        'open': {'text': 'You open the door and are in the bottom of a well',
-                 'next': 'wellBottom'}
-        },
-    'start': {
-        'light': {'text': 'You can see a door',
-                  'next': 'lightOn' }, 
-        'eat': {'text': 'You have nothing to eat'}
-        }
-    }
+import json
 
-answers = story['start']
+with open('story.json', encoding='utf-8-sig') as storyFile: 
+
+    story = json.load(storyFile)
+
+options = story['start']
   
 while True:
 
@@ -25,13 +14,13 @@ while True:
         break
 
     elif answer == 'help':
-        print('Try', ', '.join(iter(answers)))
+        print('Try', ', '.join(iter(options)))
 
-    elif answer not in answers:
+    elif answer not in options:
         print('You can\'t', answer)
 
     else:
-        print(answers[answer]['text']) 
+        print(options[answer]['text']) 
 
-        if 'next' in answers[answer]:
-            answers = story[answers[answer]['next']]
+        if 'next' in options[answer]:
+            options = story[options[answer]['next']]
