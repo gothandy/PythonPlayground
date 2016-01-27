@@ -1,4 +1,4 @@
-# http://en.literateprograms.org/Pi_with_Machin's_formula_(Python)
+# http://en.literateprograms.org/Pi_with_Machin%27s_formula_%28Python%29
 
 def arccot(x, unity):
     sum = xpower = unity // x
