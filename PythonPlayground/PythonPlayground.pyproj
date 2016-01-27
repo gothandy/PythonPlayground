@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>11cafe59-fa13-4f5a-83a3-539ff7d09fc9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>pi.py</StartupFile>
+    <StartupFile>Chemistry.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -34,7 +34,10 @@
     <Compile Include="Adventure.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="pi.py">
+    <Compile Include="Chemistry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pi.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
