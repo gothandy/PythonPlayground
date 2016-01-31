@@ -1,6 +1,87 @@
 ﻿{
+  "shoot": {
+    "shoot": {
+      "text": "the dragons goes up then knocks you off and you die",
+      "exit": true
+    },
+    "throw gun away": {
+      "text": "the dragon see's you throw the gun away so goes and lets you be"
+    }
+  },
+  "killDragon": {
+    "look": { "text": "You look and see a gun  in your pocket" },
+    "next": "shoot",
+    "try tame": { "text": "it continues acting weird and kills you" }
+  },
+  "SaddleOn": {
+    "put": {
+      "text": "You put the saddle on Bobby. Bobby starts acting weird.",
+      "next": "killDragon"
+    }
+  },
+  "Village": {
+    "go": {
+      "text": "At the village you make a saddle it takes two months.",
+      "next": "SaddleOn"
+    }
+  },
+  "BobbyLands": {
+    "look": {
+      "text": "You look for a village you find one.",
+      "next": "Village"
+    }
+  },
+  "DragonFlies": {
+    "talk": { "text": "You ask the dragon 'to go down please' but the dragon doesn't go down." },
+    "name": {
+      "text": "You name the dragon 'Bobby' and ask it to go down. Bobby goes down.",
+      "next": "BobbyLands"
+    }
+  },
+  "TameDragon": {
+    "climb": {
+      "text": "You climb onto the dragon's neck and the dragon flies away but you can only just hold on.",
+      "next": "DragonFlies"
+    }
+  },
+  "BigForest": {
+    "look": { "text": "You can see a big two headed dragon, with spikes all over it." },
+    "tame": {
+      "text": "You put your hand out and wait for the dragon to put it's nose on it. The dragon lowers it's right head.",
+      "next": "TameDragon"
+    }
+
+  },
+  "ClimbRope": {
+    "pull": {
+      "text": "You pull on the rope the bucket falls on your head and you die!",
+      "exit": true
+    },
+    "climb": {
+      "text": "You climb the rope. You find yourself in a really big scary forest.",
+      "next": "BigForest"
+    }
+  },
+  "ThrowBucket": {
+    "drop": {
+      "text": "you drop it and it lands on your foot then brakes it, then you get a big cut and die off blood loss",
+      "exit": true
+    },
+    "throw": {
+      "text": "The bucket lands outside the well. It was attached to some rope.",
+      "next": "ClimbRope"
+    }
+  },
   "wellBottom": {
-    "look": { "text": "You can see a bucket above" },
+    "look": { "text": "You can see a bucket." },
+    "wear": { "text": "You look very nice with a bucket on your head." },
+
+
+    "pick": {
+
+      "text": "You pick up the bucket.",
+      "next": "ThrowBucket"
+    },
     "back": {
       "next": "lightOn",
       "text": "You go back through the door"

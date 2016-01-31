@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>11cafe59-fa13-4f5a-83a3-539ff7d09fc9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Chemistry.py</StartupFile>
+    <StartupFile>Adventure.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

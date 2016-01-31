@@ -2,6 +2,7 @@ recipes = {
     'plank': ['wood', 'blade'],
     'blade': ['iron', 'fire'],
     'fire': ['wood', 'flint'],
+    'house': ['plank', 'iron', 'stone']
     }
 
 materials = {
@@ -10,7 +11,8 @@ materials = {
     'plank': 0,
     'fire': 0,
     'iron': 1,
-    'flint': 1
+    'flint': 1,
+    'stone': 1
     }
 
 def checkIngredients(product):
