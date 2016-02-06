@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>11cafe59-fa13-4f5a-83a3-539ff7d09fc9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>StringLoop.py</StartupFile>
+    <StartupFile>Calculator.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,7 +26,7 @@
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="calculator.py">
+    <Compile Include="Calculator.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Carbs.py">
@@ -38,6 +38,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Chemistry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lambda.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Numbers.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Pi.py">

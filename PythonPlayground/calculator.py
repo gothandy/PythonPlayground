@@ -1,15 +1,51 @@
+import math
+import Lambda
+import Numbers
 
-a = float(input("number: "))
+def Calculate(cmd, x):
 
-while True:
-    b = input("action: ")
-    c = float(input("number: "))
+    a = {
+        'exit': None,
+        'pi': math.pi,
+        'sqrt': lambda x: math.sqrt(x),
+        'sqr': lambda x: x ** 2,
+        'p': lambda x, y: x ** y,
+        '+': lambda x, y: x + y,
+        '-': lambda x, y: x - y,
+        '*': lambda x, y: x * y,
+        '/': lambda x, y: x / y
+        }
 
-    if b == '+':
-        a = a + c
+    for action in iter(a):
 
-    elif b == '-':
-        a = a - c
+        if cmd.startswith(action):
 
-    print(a)
+            if not Lambda.isLambda(a[action]):
+                return a[action]
+
+            elif Lambda.args(a[action]) == ['x']:
+                return a[action](x)
+
+            elif Lambda.args(a[action]) == ['x','y']:
+                y = float(cmd[len(action):])
+                return a[action](x,y)
+
+        if Numbers.IsFloat(cmd):
+            return float(cmd)
+
+    print(cmd, "unrecognized.")
+    return x
+
+def Calculator():
+
+    x= float(0)
+    while True:
+        x = Calculate(input(':'), x)
+
+        if x is None:
+            break
+
+        print(x)
+
+Calculator()
         
