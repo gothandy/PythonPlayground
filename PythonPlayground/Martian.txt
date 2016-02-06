@@ -1,0 +1,37 @@
+"You hear an alarm. Wind speeds gusting to 175kph. The mission is designed to handle sandstorm gusts of 150mph."
+
+"what do I do?", "Call Houston?"
+"call houston", "They advise you put on your flight suit and huddle in the middle of the Hab. They are worried about the Hab depressurising"
+
+
+
+
+"put on flight suit", "You join the rest of the crew huddled in the middle of the Hab. 
+
+
+
+"What is The Ares Program?", "The Ares Program. Mankind reaching out to Mars to send people to another planet."
+
+"Who am I?", "Mark Watney. Member of the Ares 3 crew. The very lowest ranked member of the crew."
+
+"What day is it?", "SOL 6"
+
+"What is here?", "The Hab you live in and the MDV (Mars Descent Vehicle) outside."
+
+
+
+SOL 6
+
+The mission is designed to handle sandstorm gusts of 150kph.
+
+Houston has got understandably nervous when we got whacked with 175 kph winds.
+
+You are all in your flight space suits and huddled in the middle of the Hab, just in case it lost pressure. But the Hab wasn't the problem.
+
+The MAV is a spaceship. 
+
+You're pretty much fucked.
+
+Six days into what should be the greatest two months of your life, and it's about to turn into a nightmare.
+
+If you die here today. Maybe there'll be a day of national mourning for you, and your Wikipedia page will say, "Mark Watney is the only human being to have died on Mars."
