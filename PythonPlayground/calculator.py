@@ -16,6 +16,11 @@ def Calculate(cmd, x):
         '/': lambda x, y: x / y
         }
 
+    if cmd == 'help':
+        for action in iter(a):
+            print(action)
+        return x
+
     for action in iter(a):
 
         if cmd.startswith(action):
