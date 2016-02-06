@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>11cafe59-fa13-4f5a-83a3-539ff7d09fc9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Calculator.py</StartupFile>
+    <StartupFile>Functions.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -38,6 +38,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Chemistry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Functions.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Lambda.py">
