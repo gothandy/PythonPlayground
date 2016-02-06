@@ -1,6 +1,6 @@
 import json
 
-with open('story.json', encoding='utf-8-sig') as storyFile: 
+with open('/home/henry/projects/PythonPlayground/PythonPlayground/story.json', encoding='utf-8-sig') as storyFile: 
 
     story = json.load(storyFile)
 
