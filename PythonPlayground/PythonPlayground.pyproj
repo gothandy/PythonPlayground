@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>11cafe59-fa13-4f5a-83a3-539ff7d09fc9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Puzzle\Automated.py</StartupFile>
+    <StartupFile>Puzzle\Play.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -58,7 +58,25 @@
     <Compile Include="Pi.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Puzzle\Automated.py">
+    <Compile Include="Puzzle\Actions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Puzzle\treedict\treedict.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Puzzle\treedict\test_treedict.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Puzzle\treedict\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Puzzle\Engine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Puzzle\Play.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Puzzle\Commands\Consequences.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Puzzle\Commands\Go.py">
@@ -76,6 +94,12 @@
     <Compile Include="Puzzle\Commands\Where.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Puzzle\Story.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Puzzle\Test_Basic.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="StringLoop.py">
       <SubType>Code</SubType>
     </Compile>
@@ -87,6 +111,7 @@
   <ItemGroup>
     <Folder Include="Puzzle\" />
     <Folder Include="Puzzle\Commands\" />
+    <Folder Include="Puzzle\treedict\" />
   </ItemGroup>
   <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
   <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
